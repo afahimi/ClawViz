@@ -31,6 +31,7 @@ const Canvas = () => {
     const material = new THREE.MeshBasicMaterial({
       color: 0xff6347,
       wireframe: true,
+      flatShading: true,
     });
     const torus = new THREE.Mesh(geometry, material);
 
