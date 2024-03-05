@@ -47,8 +47,7 @@ const Canvas = () => {
       torus.rotation.y += 0.01;
       torus.rotation.z += 0.01;
       
-      hue += 0.0001;
-      if (hue > 1) hue = 0;
+      hue = (hue + 0.0001) % 1;
     
       torus.material.color.setHSL(hue, 1, 0.5);
 
